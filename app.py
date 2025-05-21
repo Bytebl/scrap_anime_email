@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     dados = scrape_top_animes()
-    send_email("📩 Seus animes do dia!", dados, "DESTINATARIO@gmail.com")  # <-- Troque aqui
+    send_email("📩 Seus animes do dia!", dados, "DESTINATARIO@gmail.com")  
     return "✅ Email enviado com sucesso!"
 
 if __name__ == "__main__":
